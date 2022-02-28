@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* login-page */
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+/* contact page */
+#contact {
+  width : 95vw;
+  text-align: center;
+  margin: auto;
+}
+
+.card {
+  margin: 10% auto ;
+}
+
+
+
+/* add blog */
+#add-blog {
+  padding-top: 5vh; 
+  width : 90vw;
+  min-height :auto;
+  text-align: center;
+} 
+
+.blog-enter {
+  margin: 0 auto;
+  width: 80vw;
+  line-height: 50px;
+  line-break :20px;
+  text-align: left;
+  line-break: auto;
+}
+#blog-title{
+  border: #240059 2px solid;
+  border-radius: 20px; 
+}
+#blog-author{
+  border: #240059 2px solid;
+  border-radius: 20px; 
+}
+
+#blog-data { 
+  border: #240059 2px solid;
+  border-radius: 20px; 
+  resize: both;
+}
+
+.btn-align {
+  text-align: center;
+
+}
+.add-blog-heading{
+  text-align: center;
+  margin: 5% 10% 0 10%;
+  color: #5b21b6;
+
+}
+/* html element */
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 2.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* index page */
+.profile-icon{
+  width: 5vw;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+
+
+
+.home-heading{
+  margin: 100px;
+}
+
+
