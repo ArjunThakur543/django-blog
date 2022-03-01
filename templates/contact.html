@@ -46,11 +46,10 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                         
                     </form>
-                    <a href="{% url 'login' %}"><input type="button" value="Login" class="btn btn-outline-light" style="margin:0 0 0 5vw;" ></a>
+                    <a href="{% url 'login' %}"><button class="btn btn-responsive btn-outline-light mx-4">Login</button></a>
                     
                     <span>
-                        {%load static%}
-                        <img src="{% static 'img/admin.png' %}" alt="admin"class="image-responsive profile-icon hidden">
+                        <img src="{% static 'img/software-engineer.png' %}" alt="admin"class="image-responsive profile-icon hidden">
                     </span>
                 </div>
                 </div>
@@ -58,7 +57,7 @@
         </section>
         <section id="contact">
             <div class="card" style="width: 18rem;">
-                <img src="img/admin.png" class="card-img-top" alt="profile - image">
+                <img src="{% static 'img/admin.png' %}" class="card-img-top" alt="profile - image">
                 <div class="card-body">
                     <h5 class="card-title">Arjun Thakur</h5>
                     <p class="card-text">Admin</p>

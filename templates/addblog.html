@@ -48,9 +48,9 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                         
                     </form>
-                    <a href="{% url 'login' %}"><input type="button" value="Login" class="btn btn-outline-light" style="margin:0 0 0 5vw;" ></a>
-                    {% comment %} <span><img src="img/admin.png" alt="admin"class="image-responsive profile-icon hidden"> </span>
-                {% endcomment %}
+                    <a href="{% url 'login' %}"><button class="btn btn-responsive btn-outline-light mx-4">Login</button></a>
+                    <!-- {% comment %} <span><img src="img/admin.png" alt="admin"class="image-responsive profile-icon hidden"> </span>{% endcomment %} -->
+                
                 </div>
                 </div>
             </nav>
@@ -63,29 +63,30 @@
             <div class=" blog-enter container">
                     <form action="/addblog" method='post'>
                         {% csrf_token %}
-                        <div class="row">
-                            <div class="col-lg-6">
-                                        <label for="blog-title">Enter the title:- </label>
-                                        
-                                        <input type="text" name="blog-title" id="blog-title" style="border-radius: 20px;">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="blog-author">Author Name :- </label>
-                                        
-                                        <input type="text" name="blog-author" id="blog-author" style="border-radius: 20px;">
-                                    </div>
-                                </div>
+                        <div class="group">      
+                            <input type="text" id="blog-title" name="blog-title" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Name</label>
+                        </div>
+                            
+                        <div class="group">      
+                            <input type="text" id="blog-author" name="blog-author" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Title</label>
+                        </div>
+                        
                         {% comment %} <textarea placeholder="Enter the content" id="blog-data" name="blog-data" style="">
                         
                         </textarea> {% endcomment %}
-                        <label for="blog-data">Enter the Blog :-</label>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                <textarea class="form-control" id="blog-data" name="blog-data" rows="10"></textarea>
-                            </div>
+                        
+                        <div class="group">      
+                            <input type="text" id="blog-data" name="blog-data" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Write Blog</label>
                         </div>
-                        <br>
                         
                         
                         <div style="text-align: center;">
